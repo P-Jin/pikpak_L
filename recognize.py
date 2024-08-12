@@ -3,8 +3,8 @@ import os
 
 
 def run():
-    ocr = ddddocr.DdddOcr(det=False, ocr=False, show_ad=False, import_onnx_path="models/pikpak4.0.onnx",
-                          charsets_path="models/charsets.json")
+    ocr = ddddocr.DdddOcr(det=False, ocr=False, show_ad=False, import_onnx_path="./pikpak4.0.onnx",
+                          charsets_path="./charsets.json")
 
     ima_path = 'temp/'
     for file in os.listdir(ima_path):
